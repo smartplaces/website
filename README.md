@@ -1,0 +1,4 @@
+website
+=======
+
+SmartPlaces web site
