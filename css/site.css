@@ -10,3 +10,6 @@ body {
   color: #000000;
   background-color: #E7E7E7;
 }
+.panel-success > .panel-heading {
+  background-color: #37BC9B;
+}
