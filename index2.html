@@ -11,29 +11,10 @@
         <link href="./css/icomoon.css" rel="stylesheet">
         <!-- iHover -->
         <link href="./css/ihover.css" rel="stylesheet">
-        <!--[if !IE]> -->
-        <!-- One Page Scroll -->
-        <link href="./css/onepage-scroll.css" rel="stylesheet">
-        <!-- <![endif]-->
-        <!-- Custom styles for this template -->
-        <link href="./css/site.css" rel="stylesheet">
-        <!--[if !IE]> -->
-        <style>
-            section {
-                width: 100%;
-                height: 100%;
-                position: relative;
-            }
-            .sp-section, .item, .carousel-inner, .container, .row, div[class*="col-"] {
-                height: 100%;
-                position: relative;
-            }
-        </style>
-        <!-- <![endif]-->
 
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#bs-spybar" data-offset="54">
 
         <div id="bs-spybar" class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -48,12 +29,12 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right onepage-pagination">
-                        <li data-index="1"><a data-index="1" href="#1">Начало</a></li>
-                        <li data-index="2"><a data-index="2" href="#2">Как это работает?</a></li>
-                        <li data-index="3"><a data-index="3" href="#3">Найти рядом</a></li>
-                        <li data-index="4"><a data-index="4" href="#4">Для бизнеса</a></li>
-                        <li data-index="5"><a data-index="5" href="#5">Вопросы и ответы</a></li>
-                        <li data-index="6"><a data-index="6" href="#6">Контакты</a></li>
+                        <li data-index="1" class="active"><a class="toBeFixed" data-index="1" href="#1">Начало</a></li>
+                        <li data-index="2"><a class="toBeFixed" data-index="2" href="#2">Как это работает?</a></li>
+                        <li data-index="3"><a class="toBeFixed" data-index="3" href="#3">Найти рядом</a></li>
+                        <li data-index="4"><a class="toBeFixed" data-index="4" href="#4">Для бизнеса</a></li>
+                        <li data-index="5"><a class="toBeFixed" data-index="5" href="#5">Вопросы и ответы</a></li>
+                        <li data-index="6"><a class="toBeFixed" data-index="6" href="#6">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,23 +43,23 @@
         <div id="skrollr-body" class="main">
 
             <section>
-                <div id="section0" class="sp-section" data-menu-offset="-54" class="carousel slide" data-ride="carousel">
+                <div id="section1" class="sp-section fix-height-plz carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators" style="bottom: 5px;">
-                        <li data-target="#section0" data-slide-to="0" class="active"></li>
-                        <li data-target="#section0" data-slide-to="1"></li>
-                        <li data-target="#section0" data-slide-to="2"></li>
-                        <li data-target="#section0" data-slide-to="3"></li>
-                        <li data-target="#section0" data-slide-to="4"></li>
-                        <li data-target="#section0" data-slide-to="5"></li>
+                        <li data-target="#section1" data-slide-to="0" class="active"></li>
+                        <li data-target="#section1" data-slide-to="1"></li>
+                        <li data-target="#section1" data-slide-to="2"></li>
+                        <li data-target="#section1" data-slide-to="3"></li>
+                        <li data-target="#section1" data-slide-to="4"></li>
+                        <li data-target="#section1" data-slide-to="5"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active" style="background-image: url('./img/page1.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6" style="background-color:rgba(255,255,255,0.75); padding: 20px;">
+                                    <div class="col-sm-6 fix-height-plz" style="background-color:rgba(255,255,255,0.75); padding: 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Smart Places &mdash; умные&nbsp;места</h1>
                                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas ipsum quis tempor cursus. Pellentesque bibendum risus et diam aliquet placerat. Nullam erat odio, lacinia ac sem a, vehicula sagittis nulla. Pellentesque malesuada porttitor pharetra. Fusce eu turpis quis orci lobortis adipiscing. Nunc faucibus odio eu posuere accumsan. Nunc varius nunc ipsum, ac sodales mi congue et. Phasellus bibendum tellus ac ultrices blandit. Phasellus congue in lectus adipiscing ultricies. Integer hendrerit mollis libero id elementum. Nulla interdum arcu vel ligula egestas commodo. Vestibulum eu faucibus lorem. Proin commodo arcu in ultrices tempor.</p>
                                         <p><a href="#"><img src="./img/Download_on_the_App_Store_Badge_RU_135x40.png" alt="Загрузите в App Store" /></a></p>
@@ -87,9 +68,9 @@
                             </div>
                         </div>
                         <div class="item" style="background-image: url('./img/bg1.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6 text-center" style="padding: 20px 20px 0px 20px;">
+                                    <div class="col-sm-6 fix-height-plz text-center" style="padding: 20px 20px 0px 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Smart Places<br/>встречают у входа</h1>
                                         <div class="center-block" style="background: transparent url('./img/iphone5s.png') no-repeat; width: 323px; height: 682px; padding: 100px 24px 101px 27px; overflow: hidden;">
                                             <div class="text-left" style="height: 481px; width: 272px; color: #FFFFFF; background-color: #EC87C0; overflow: hidden;">
@@ -109,9 +90,9 @@
                             </div>
                         </div>
                         <div class="item" style="background-image: url('./img/bg1.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6 text-center" style="padding: 20px 20px 0px 20px;">
+                                    <div class="col-sm-6 fix-height-plz text-center" style="padding: 20px 20px 0px 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Smart Places<br/>открывают каталог</h1>
                                         <div class="center-block" style="background: transparent url('./img/iphone5s.png') no-repeat; width: 323px; height: 682px; padding: 100px 24px 101px 27px; overflow: hidden;">
                                             <div class="text-left" style="height: 481px; width: 272px; color: #FFFFFF; background-color: #AC92EC; overflow: hidden;">
@@ -131,9 +112,9 @@
                             </div>
                         </div>
                         <div class="item" style="background-image: url('./img/bg1.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6 text-center" style="padding: 20px 20px 0px 20px;">
+                                    <div class="col-sm-6 fix-height-plz text-center" style="padding: 20px 20px 0px 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Smart Places<br/>помогают вам внутри</h1>
                                         <div class="center-block" style="background: transparent url('./img/iphone5s.png') no-repeat; width: 323px; height: 682px; padding: 100px 24px 101px 27px; overflow: hidden;">
                                             <div class="text-left" style="height: 481px; width: 272px; color: #FFFFFF; background-color: #48CFAD; overflow: hidden;">
@@ -153,9 +134,9 @@
                             </div>
                         </div>
                         <div class="item" style="background-image: url('./img/bg1.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6 text-center" style="padding: 20px 20px 0px 20px;">
+                                    <div class="col-sm-6 fix-height-plz text-center" style="padding: 20px 20px 0px 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Smart Places<br/>поощряют вас</h1>
                                         <div class="center-block" style="background: transparent url('./img/iphone5s.png') no-repeat; width: 323px; height: 682px; padding: 100px 24px 101px 27px; overflow: hidden;">
                                             <div class="text-left" style="height: 481px; width: 272px; color: #FFFFFF; background-color: #FC6E51; overflow: hidden;">
@@ -175,17 +156,17 @@
                             </div>
                         </div>
                         <div class="item" style="background-image: url('./img/page6.jpg'); background-size: cover;" data-54-top-top="background-position: 0px 0px;" data-54-top-bottom="background-position: 0px 550px;" data-anchor-target="#section0" data-smooth-scrolling="off">
-                            <div class="container" style="min-height: 550px;" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
+                            <div class="container fix-height-plz" data-54-top-center="opacity: 1;" data-54-top-bottom="opacity: 0;" data-anchor-target="#section0" data-smooth-scrolling="off">
                                 <div class="row">
-                                    <div class="col-sm-6" style="background-color:rgba(255,255,255,0.75); padding: 20px;">
+                                    <div class="col-sm-6 fix-height-plz" style="background-color:rgba(255,255,255,0.75); padding: 20px;">
                                         <h1 style="font-family: 'Lobster', cursive; color: #4A89DC; margin-bottom: 30px;">Загружайте прямо сейчас</h1>
                                         <p><a href="#"><img src="./img/Download_on_the_App_Store_Badge_RU_135x40.png" alt="Загрузите в App Store" /></a></p>
                                         <br/>
                                         <p class="lead">А также читайте:</p>
                                         <ul>
-                                            <li class="lead"><a href="#section1">Как работает магия Smart Places</a></li>
-                                            <li class="lead"><a href="#section2">Smart Places поблизости</a></li>
-                                            <li class="lead"><a href="#section4">Вопросы и ответы</a></li>
+                                            <li class="lead"><a href="#section2">Как работает магия Smart Places</a></li>
+                                            <li class="lead"><a href="#section3">Smart Places поблизости</a></li>
+                                            <li class="lead"><a href="#section5">Вопросы и ответы</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -197,13 +178,13 @@
             </section>
 
             <section>
-                <div id="section1" class="sp-section" data-menu-offset="-54" style="background-color: #4A89DC;">
+                <div id="section2" class="sp-section" style="background-color: #4A89DC;">
                     <div class="container" style="padding: 20px;">
                         <h1 style="font-family: 'Lobster', cursive; color: #FFFFFF; margin-bottom: 30px;">Как работает магия Smart Places</h1>
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="ih-item circle colored effect6 scale_up center-block" style="margin-top: 20px; margin-bottom: 40px;">
-                                    <a href="#section1">
+                                    <a href="#section2">
                                         <div class="img text-center"><span class="icon-feed" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span></div>
                                         <div class="info">
                                             <span class="icon-feed" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span>
@@ -215,7 +196,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="ih-item circle colored effect6 scale_up center-block" style="margin-top: 20px; margin-bottom: 40px;">
-                                    <a href="#section1">
+                                    <a href="#section2">
                                         <div class="img text-center"><span class="icon-wand" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span></div>
                                         <div class="info">
                                             <span class="icon-wand" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span>
@@ -227,7 +208,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="ih-item circle colored effect6 scale_up center-block" style="margin-top: 20px; margin-bottom: 40px;">
-                                    <a href="#section1">
+                                    <a href="#section2">
                                         <div class="img text-center"><span class="icon-thumbs-up" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span></div>
                                         <div class="info">
                                             <span class="icon-thumbs-up" style="font-size: 128px; color: #FFFFFF; line-height: 220px;"></span>
@@ -243,7 +224,7 @@
             </section>
 
             <section>
-                <div id="section2" class="sp-section" data-menu-offset="-54" style="background-color: #A0D468;">
+                <div id="section3" class="sp-section" style="background-color: #A0D468;">
                     <div class="container">
                         <h1 style="font-family: 'Lobster', cursive; color: #FFFFFF; margin-bottom: 30px;">Smart Places поблизости</h1>
                         <div id="yamap" style="min-height: 500px;"></div>
@@ -252,7 +233,7 @@
             </section>
 
             <section>
-                <div id="section3" class="sp-section" data-menu-offset="-54" style="background-image: url('./img/page6.jpg'); background-size: cover;" data-top-top="background-position: 0px 0px;" data-top-bottom="background-position: 0px 400px;" data-smooth-scrolling="off">
+                <div id="section4" class="sp-section" style="background-image: url('./img/page6.jpg'); background-size: cover;" data-top-top="background-position: 0px 0px;" data-top-bottom="background-position: 0px 400px;" data-smooth-scrolling="off">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6" style="background-color:rgba(255,255,255,0.75); padding: 20px;">
@@ -268,7 +249,7 @@
             </section>
 
             <section>
-                <div id="section4" class="sp-section" data-menu-offset="-54" style="background-color: #37BC9B;">
+                <div id="section5" class="sp-section" style="background-color: #37BC9B;">
                     <div class="container" style="padding: 20px;">
                         <h1 style="font-family: 'Lobster', cursive; color: #FFFFFF; margin-bottom: 30px;">Вопросы и ответы</h1>
                         <div class="row">
@@ -333,7 +314,7 @@
             </section>
 
             <section>
-                <div id="section5" class="sp-section" data-menu-offset="-54" style="background-color: #656D78;">
+                <div id="section6" class="sp-section" style="background-color: #656D78;">
                     <div class="container" style="color: #FFFFFF;">
                         <div class="row">
                             <div class="col-sm-4" style="padding: 20px;">
@@ -355,41 +336,49 @@
 
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <!--
-<script type="text/javascript">
-var s;
-</script>
--->
-        <!--[if !IE]> -->
-        <script type="text/javascript" src="./js/jquery.onepage-scroll.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/yepnope.js"></script>
         <script type="text/javascript">
-            $(".main").onepage_scroll({
-                pagination: true,
-                updateURL: true
+
+            var shiftWindow = function() {
+                scrollBy(0, -50);
+            };
+
+            yepnope({
+                test: (/IE|Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera),
+                yep: {
+                    'badAgentCSS': './css/badagent.css',
+                    'defaultCSSYep': './css/site.css'
+                },
+                nope: {
+                    'onepageCSS': './css/onepage-scroll.css',
+                    'onepageJS': './js/jquery.onepage-scroll.js',
+                    'defaultCSSNope': './css/site.css',
+                    'bootstrapJS': './js/bootstrap.js'
+                },
+                callback: {
+                    'badAgentCSS': function (url, result, key) {
+
+                        $('a.toBeFixed').each(function() {
+                            $(this).attr('href', '#section' + $(this).data('index'));
+                        });
+
+                        yepnope('./js/bootstrap.js');
+
+                        if (location.hash) shiftWindow();
+                        window.addEventListener("hashchange", shiftWindow);
+                    },
+                    'onepageJS': function (url, result, key) {
+                        $(".main").onepage_scroll({
+                            pagination: true,
+                            updateURL: true
+                        });
+                    }
+                }
             });
+
         </script>
-        <!--
-<script type="text/javascript" src="./js/skrollr.min.js"></script>
-<script type="text/javascript" src="./js/skrollr.menu.min.js"></script>
-<script type="text/javascript">
-s = skrollr.init({mobileCheck: function(){return false;}});
-skrollr.menu.init(s);
-</script>
--->
-        <!-- <![endif]-->
-        <!--
-<script type="text/javascript">
-var shiftWindow = function() {
-scrollBy(0, -50);
-};
-if (s === undefined) {
-if (location.hash) shiftWindow();
-window.addEventListener("hashchange", shiftWindow);
-};
-</script>
--->
-        <script src="./js/bootstrap.js"></script>
+
         <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
         <script type="text/javascript">
             var myMap;
