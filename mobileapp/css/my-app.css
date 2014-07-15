@@ -1,51 +1,35 @@
-/* Your app custom files in this file */
-/* Tab bar icons */
-i.tabbar-demo-icon-1 {
-  width: 30px;
+i.tabbar-map-icon {
+  width: 20px;
   height: 30px;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23929292'><g><circle cx='15.2' cy='8.8' r='1.5'/><polygon points='16.7,12.3 16.7,11.7 16.7,11.3 13.7,11.3 13.7,12.3 14.7,12.3 14.7,20.3 13.7,20.3 13.7,21.3 17.7,21.3 17.7,20.3 16.7,20.3'/><path d='M15.2,2.3C8.3,2.3,2.7,7.9,2.7,14.8s5.6,12.5,12.5,12.5c6.9,0,12.5-5.6,12.5-12.5S22.1,2.3,15.2,2.3z M15.2,26.3 c-6.3,0-11.5-5.2-11.5-11.5S8.8,3.3,15.2,3.3s11.5,5.2,11.5,11.5S21.5,26.3,15.2,26.3z'/></g></svg>");
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 23' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M0,6 L0,23 L6,18 L6,1 L0,6 Z M1,6.39672852 L1,21 L5,17.6520996 L5,3 L1,6.39672852 Z M7,17.0376416 L7,18 L13,23 L13,6 L7,1 L7,2.39273118 L12,6.39672852 L12,21 L7,17.0376416 Z M14,6.16117333 L14,5 L20,0 L20,17 L14,22 L14,20.7699546 L19.0059814,16.6026611 L19.0059814,1.95056152 L14,6.16117333 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='map_brochure_outline_stroke'><use fill='#929292' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
 }
-.active i.tabbar-demo-icon-1 {
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 30 30' fill='%23007aff'><path d='M15,2.6C8.1,2.6,2.5,8.2,2.5,15.1C2.5,22,8.1,27.6,15,27.6S27.5,22,27.5,15.1C27.5,8.2,21.9,2.6,15,2.6z M15,7.6 c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5c-0.8,0-1.5-0.7-1.5-1.5C13.5,8.3,14.2,7.6,15,7.6z M17.5,21.6h-4v-1h1v-8h-1v-1h3V12 v0.6v8h1V21.6z'/></svg>");
-}
-i.tabbar-demo-icon-2 {
-  width: 25px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 25 17' fill='%23929292'><path d='M19.5,0h-14L0,6v11h25V6L19.5,0z M5.9,1h13.2l4.5,5H16c0,1.9-1.6,3.4-3.5,3.4C10.6,9.4,9,7.9,9,6H1.4L5.9,1z M24,16H1V7h7.1 c0.5,1.9,2.3,3.4,4.4,3.4s3.9-1.5,4.4-3.4H24V16z'/></svg>");
-}
-.active i.tabbar-demo-icon-2 {
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 25 17' fill='%23007aff'><path d='M19.5,0h-14L0,6v11h25V6L19.5,0z M5.9,1h13.2l4.5,5H16c0,1.9-1.6,3.4-3.5,3.4C10.6,9.4,9,7.9,9,6H1.3L5.9,1z'/></svg>");
-}
-i.tabbar-demo-icon-3 {
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 30 19' fill='%23929292'><path d='M16.8,1c3.7,0,6.8,3,6.8,6.8l0,0.1c0,0,0,0.1,0,0.1l0,1l1,0C27,9,29,11,29,13.5c0,2.5-2,4.5-4.5,4.5H6c-2.8,0-5-2.2-5-5 c0-2.1,1.4-4,3.4-4.7L5,8.1l0.1-0.6C5.3,6,6.5,5,8,5c0.4,0,0.9,0.1,1.3,0.3l0.9,0.5l0.4-0.9C11.8,2.5,14.2,1,16.8,1 M16.8,0 c-3.1,0-5.7,1.8-7,4.4C9.2,4.2,8.6,4,8,4C6,4,4.4,5.4,4.1,7.3C1.7,8.1,0,10.4,0,13c0,3.3,2.7,6,6,6h18.5v0c3,0,5.5-2.5,5.5-5.5 c0-3-2.5-5.5-5.5-5.5c0-0.1,0-0.2,0-0.2C24.5,3.5,21.1,0,16.8,0L16.8,0z'/></svg>");
-}
-.active i.tabbar-demo-icon-3 {
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 30 19' fill='%23007aff'><path d='M24.5,8c0-0.1,0-0.2,0-0.2C24.5,3.5,21,0,16.8,0c-3.1,0-5.7,1.8-7,4.4C9.2,4.2,8.6,4,8,4C6,4,4.4,5.4,4,7.3 C1.7,8.1,0,10.4,0,13c0,3.3,2.7,6,6,6h18.5v0c3,0,5.5-2.5,5.5-5.5C30,10.5,27.5,8,24.5,8z'/></svg>");
-}
-i.tabbar-demo-icon-4 {
-  width: 25px;
-  height: 30px;
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 25 19' fill='%23929292'><g><path d='M23,3h-4.1l-2.4-2.4c0,0,0,0,0,0l0,0C16.1,0.2,15.6,0,15,0h-5C9.5,0,8.9,0.3,8.6,0.6l0,0L6.2,3H2C0.9,3,0,3.9,0,5v12 c0,1.1,0.9,2,2,2h21c1.1,0,2-0.9,2-2V5C25,3.9,24.1,3,23,3z M24,17c0,0.6-0.4,1-1,1H2c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h4.2h0.4 l0.3-0.3l1.2-1.2l0,0.1l1.1-1.2C9.5,1.1,9.8,1,10,1h5c0.3,0,0.5,0.1,0.7,0.3l2.4,2.4L18.4,4h0.4H23c0.6,0,1,0.4,1,1V17z'/><path d='M12.5,4C8.9,4,6,6.9,6,10.5c0,3.6,2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5C19,6.9,16.1,4,12.5,4z M12.5,16 c-3,0-5.5-2.5-5.5-5.5C7,7.5,9.5,5,12.5,5S18,7.5,18,10.5C18,13.5,15.5,16,12.5,16z'/><path d='M12.5,6C10,6,8,8,8,10.5C8,13,10,15,12.5,15s4.5-2,4.5-4.5C17,8,15,6,12.5,6z M12.5,14C10.6,14,9,12.4,9,10.5 C9,8.6,10.6,7,12.5,7S16,8.6,16,10.5C16,12.4,14.4,14,12.5,14z'/></g></svg>");
-}
-.active i.tabbar-demo-icon-4 {
-  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 25 19' fill='%23007aff'><g><path d='M23,3h-4.1l-2.4-2.4c0,0,0,0,0,0l0,0C16.1,0.2,15.6,0,15.1,0h-5C9.5,0,9,0.3,8.6,0.6l0,0L6.2,3H2C0.9,3,0,3.9,0,5v12 c0,1.1,0.9,2,2,2h21c1.1,0,2-0.9,2-2V5C25,3.9,24.1,3,23,3z M12.5,16c-3,0-5.5-2.5-5.5-5.5C7,7.5,9.5,5,12.5,5c3,0,5.5,2.5,5.5,5.5 C18,13.5,15.5,16,12.5,16z'/><circle cx='12.5' cy='10.5' r='4.5'/></g></svg>");
+.active i.tabbar-map-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 23' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M0,6 L0,23 L6,18 L6,1 L0,6 Z M1,6.39672852 L1,21 L5,17.6520996 L5,3 L1,6.39672852 Z M7,17.0376416 L7,18 L13,23 L13,6 L7,1 L7,2.39273118 L12,6.39672852 L12,21 L7,17.0376416 Z M14,6.16117333 L14,5 L20,0 L20,17 L14,22 L14,20.7699546 L19.0059814,16.6026611 L19.0059814,1.95056152 L14,6.16117333 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='map_brochure_outline_stroke'><use fill='#007aff' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
 }
 
-
-.entypo-icons-box {
-  position: relative;
-  display: inline-block;
-  width: 30px;
+i.tabbar-location-icon {
+  width: 15px;
   height: 30px;
-  text-align: center;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 15 22' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M15,7.8128179 C15,3.49791751 12.5187988,-1.09762448e-06 7.5,0 C2.48120115,1.09762447e-06 0,3.49791751 0,7.8128179 C0,12.1277183 7.5,22 7.5,22 C7.5,22 15,12.1277183 15,7.8128179 Z M14,7.8654274 C14,4.04085657 11.6286621,0.94043062 7.5,0.94042969 C3.37133789,0.94042875 1,4.04085657 1,7.8654274 C1,11.6899982 7.5,20.4404297 7.5,20.4404297 C7.5,20.4404297 14,11.6899982 14,7.8654274 Z M7.5,10.5 C9.7091391,10.5 11.5,8.7091391 11.5,6.5 C11.5,4.29086089 9.7091391,2.5 7.5,2.5 C5.2908609,2.5 3.5,4.29086089 3.5,6.5 C3.5,8.7091391 5.2908609,10.5 7.5,10.5 L7.5,10.5 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='map_location_pin_map-marker_outline_stroke'><use fill='#929292' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
+}
+.active i.tabbar-location-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 15 22' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M15,7.8128179 C15,3.49791751 12.5187988,-1.09762448e-06 7.5,0 C2.48120115,1.09762447e-06 0,3.49791751 0,7.8128179 C0,12.1277183 7.5,22 7.5,22 C7.5,22 15,12.1277183 15,7.8128179 Z M14,7.8654274 C14,4.04085657 11.6286621,0.94043062 7.5,0.94042969 C3.37133789,0.94042875 1,4.04085657 1,7.8654274 C1,11.6899982 7.5,20.4404297 7.5,20.4404297 C7.5,20.4404297 14,11.6899982 14,7.8654274 Z M7.5,10.5 C9.7091391,10.5 11.5,8.7091391 11.5,6.5 C11.5,4.29086089 9.7091391,2.5 7.5,2.5 C5.2908609,2.5 3.5,4.29086089 3.5,6.5 C3.5,8.7091391 5.2908609,10.5 7.5,10.5 L7.5,10.5 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='map_location_pin_map-marker_outline_stroke'><use fill='#007aff' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
 }
 
-[class^="entypo-icon-"], [class*=" entypo-icon-"], [class^="entypo-social-icon-"], [class*=" entypo-social-icon-"] {
-  font-size: 50px;
-  line-height: 60px;
-  display: block;
-  margin-top: -27px;
-  color: 929292;
+i.tabbar-history-icon {
+  width: 24px;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 22' fill='%23929292'><g><path d='M2.1813762,9 C3.12188879,3.87976371 7.60786044,0 13,0 C19.0751326,0 24,4.92486744 24,11 C24,17.0751326 19.0751326,22 13,22 C8.72726797,22 5.02351692,19.5639043 3.20191667,16.0048828 L4.34064821,16.0048828 C6.07038914,18.9911968 9.30060387,21 13,21 C18.5228478,21 23,16.5228478 23,11 C23,5.47715222 18.5228478,1 13,1 C8.16208391,1 4.12657679,4.43551918 3.2000362,9 L2.1813762,9 Z M12.5,11.3496262 L17.7106847,14.4213293 L18.2185145,13.5598719 L13.5,10.7543945 L13.5,4.03173828 L12.5,4.03173828 L12.5,11.3496262 Z M2.5,12 L5,9 L0,9 L2.5,12 Z' id='path-1'></path></g></svg>");
+}
+.active i.tabbar-history-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 24 22' fill='%23007aff'><g><path d='M2.1813762,9 C3.12188879,3.87976371 7.60786044,0 13,0 C19.0751326,0 24,4.92486744 24,11 C24,17.0751326 19.0751326,22 13,22 C8.72726797,22 5.02351692,19.5639043 3.20191667,16.0048828 L4.34064821,16.0048828 C6.07038914,18.9911968 9.30060387,21 13,21 C18.5228478,21 23,16.5228478 23,11 C23,5.47715222 18.5228478,1 13,1 C8.16208391,1 4.12657679,4.43551918 3.2000362,9 L2.1813762,9 Z M12.5,11.3496262 L17.7106847,14.4213293 L18.2185145,13.5598719 L13.5,10.7543945 L13.5,4.03173828 L12.5,4.03173828 L12.5,11.3496262 Z M2.5,12 L5,9 L0,9 L2.5,12 Z' id='path-1'></path></g></svg>");
+}
+
+i.tabbar-favourite-icon {
+  width: 22px;
+  height: 30px;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 22 22' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M10.9849098,17.1363781 L4.18653734,21.9999998 L6.53637275,13.9875387 L0,8.56176179 L7.9498286,8.49334719 L10.9849102,0 L13.9360342,8.56176759 L22,8.56176759 L15.4334469,14.0403266 L17.7832826,22 L10.9849098,17.1363781 L10.9849098,17.1363781 Z M10.9849098,15.6249035 L5.68653735,19.9885252 L7.68786575,13.7526245 L2.5,9.55028719 L8.688354,9.47357179 L10.9849102,2.98852539 L13.2138052,9.55029299 L19.5,9.55029299 L14.2083731,13.7526245 L16.2832826,19.9885254 L10.9849098,15.6249035 L10.9849098,15.6249035 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='common_star_favorite_bookmark_outline_stroke'><use fill='#929292' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
+}
+.active i.tabbar-favourite-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 22 22' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'><defs><path d='M10.9849098,17.1363781 L4.18653734,21.9999998 L6.53637275,13.9875387 L0,8.56176179 L7.9498286,8.49334719 L10.9849102,0 L13.9360342,8.56176759 L22,8.56176759 L15.4334469,14.0403266 L17.7832826,22 L10.9849098,17.1363781 L10.9849098,17.1363781 Z M10.9849098,15.6249035 L5.68653735,19.9885252 L7.68786575,13.7526245 L2.5,9.55028719 L8.688354,9.47357179 L10.9849102,2.98852539 L13.2138052,9.55029299 L19.5,9.55029299 L14.2083731,13.7526245 L16.2832826,19.9885254 L10.9849098,15.6249035 L10.9849098,15.6249035 Z' id='path-1'></path></defs><g id='miu' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'><g id='common_star_favorite_bookmark_outline_stroke'><use fill='#007aff' fill-rule='evenodd' sketch:type='MSShapeGroup' xlink:href='#path-1'></use><use fill='none' xlink:href='#path-1'></use></g></g></svg>");
 }
