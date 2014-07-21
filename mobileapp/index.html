@@ -321,8 +321,12 @@
     <script type="text/javascript">
       ymaps.ready(init);
       function init () {
-        var myMap = new ymaps.Map('yamap', {center:[55.76, 37.64], zoom:10, controls: ['smallMapDefaultSet']});
-        myMap.geoObjects.add(new ymaps.Placemark([55.684758, 37.738521], {iconContent: 'Скотина', balloonContent: 'цвет <strong>воды пляжа бонди</strong>'}, {preset: 'islands#blackStretchyIcon'}));
+        var myMap = new ymaps.Map('yamap', {center:[55.76, 37.64], zoom:10, controls: ['geolocationControl', 'trafficControl', 'zoomControl']});
+        myMap.geoObjects
+          .add(new ymaps.Placemark([55.684758, 37.738521], {iconContent: 'Скотина', balloonContentHeader: 'Скотина', balloonContentBody: 'Мясной ресторан', balloonContentFooter: 'Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.'}, {preset: 'islands#darkBlueStretchyIcon'}))
+          .add(new ymaps.Placemark([55.833436, 37.715175], {iconContent: 'ИКЕА', balloonContentHeader: 'ИКЕА', balloonContentBody: 'Магазин мебели', balloonContentFooter: 'Дом – это не только мебель. Это ощущение уюта – и возможность побыть в обществе родных людей и среди любимых предметов.'}, {preset: 'islands#darkBlueStretchyIcon'}))
+          .add(new ymaps.Placemark([55.687086, 37.529789], {iconContent: 'Mr. Drunke Bar', balloonContentHeader: 'Mr. Drunke Bar', balloonContentBody: 'Бар', balloonContentFooter: 'Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.'}, {preset: 'islands#darkBlueStretchyIcon'}))
+          ;
       };
     </script>
   </body>
