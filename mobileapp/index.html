@@ -61,33 +61,30 @@
                 <ul>
                 <li>
                   <a href="#" class="item-link item-content">
-                    <div class="item-media"><img src="http://hhhhold.com/160/d/jpg?3" width="80"></div>
                     <div class="item-inner">
                       <div class="item-title-row">
-                        <div class="item-title">Mr. Drunke Bar</div>
+                        <div class="item-title">Бар &laquo;Mr. Drunke Bar&raquo;</div>
                         <div class="item-after">0.0 км</div>
                       </div>
-                      <div class="item-subtitle">Бар</div>
+                      <div class="item-subtitle">г. Краснодар, ул. Красноармейская, 58</div>
                       <div class="item-text">Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.</div>
                     </div>
                   </a>
                 </li>
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><img src="http://hhhhold.com/160/d/jpg?1" width="80"></div>
                       <div class="item-inner">
                         <div class="item-title-row">
-                          <div class="item-title">Скотина</div>
+                          <div class="item-title">Мясной ресторан &laquo;Скотина&raquo;</div>
                           <div class="item-after">0.0 км</div>
                         </div>
-                        <div class="item-subtitle">Мясной ресторан</div>
+                        <div class="item-subtitle">г. Краснодар, ул. Суворова, 64</div>
                         <div class="item-text">Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.</div>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><img src="http://hhhhold.com/160/d/jpg?2" width="80"></div>
                       <div class="item-inner">
                         <div class="item-title-row">
                           <div class="item-title">ИКЕА</div>
@@ -321,10 +318,14 @@
     <script type="text/javascript">
       ymaps.ready(init);
       function init () {
-        var myMap = new ymaps.Map('yamap', {center:[45.023877, 38.970157], zoom:10, controls: ['geolocationControl', 'trafficControl', 'zoomControl']});
+        var myMap = new ymaps.Map('yamap', {center:[45.058071, 38.982706], zoom:10, controls: ['geolocationControl', 'trafficControl', 'zoomControl'], behaviors: []});
         myMap.geoObjects
-          .add(new ymaps.Placemark([45.025973, 38.973355], {iconContent: 'Mr. Drunke Bar', balloonContentHeader: 'Бар &laquo;Mr. Drunke Bar&raquo;', balloonContentBody: 'г. Краснодар, ул. Красноармейская, 58', balloonContentFooter: 'Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.'}, {preset: 'islands#darkBlueStretchyIcon'}))
-          .add(new ymaps.Placemark([45.022864, 38.987350], {iconContent: 'Скотина', balloonContentHeader: 'Мясной ресторан &laquo;Скотина&raquo;', balloonContentBody: 'г. Краснодар, ул. Суворова, 64', balloonContentFooter: 'Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.'}, {preset: 'islands#darkBlueStretchyIcon'}))
+          .add(new ymaps.Placemark([45.025973, 38.973355], {iconContent: '1', balloonContentHeader: 'Бар &laquo;Mr. Drunke Bar&raquo;', balloonContentBody: 'г. Краснодар, ул. Красноармейская, 58', balloonContentFooter: 'Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.022864, 38.987350], {iconContent: '2', balloonContentHeader: 'Мясной ресторан &laquo;Скотина&raquo;', balloonContentBody: 'г. Краснодар, ул. Суворова, 64', balloonContentFooter: 'Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([], {iconContent: '', balloonContentHeader: '', balloonContentBody: '', balloonContentFooter: ''}, {preset: 'islands#darkBlueStretchyIcon'}))
+          .add(new ymaps.Placemark([], {iconContent: '', balloonContentHeader: '', balloonContentBody: '', balloonContentFooter: ''}, {preset: 'islands#darkBlueStretchyIcon'}))
+          .add(new ymaps.Placemark([], {iconContent: '', balloonContentHeader: '', balloonContentBody: '', balloonContentFooter: ''}, {preset: 'islands#darkBlueStretchyIcon'}))
+
           .add(new ymaps.Placemark([55.833436, 37.715175], {iconContent: 'ИКЕА', balloonContentHeader: 'ИКЕА', balloonContentBody: 'Магазин мебели', balloonContentFooter: 'Дом – это не только мебель. Это ощущение уюта – и возможность побыть в обществе родных людей и среди любимых предметов.'}, {preset: 'islands#darkBlueStretchyIcon'}))
           ;
       };
