@@ -52,63 +52,260 @@
       </div>
       <!-- Second view (for second wrap)-->
       <div id="view-2" class="view tab">
-        <div class="pages">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center" style="min-width: 200px;">
+              <!-- Buttons row as tabs controller in navbar-->
+              <div class="buttons-row" style="min-width: 200px;">
+                <!-- Link to 1st tab, active -->
+                <a href="#view-2-map" class="tab-link active button">Схема</a>
+                <!-- Link to 2nd tab -->
+                <a href="#view-2-list" class="tab-link button">Список</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
           <div data-page="index-2" class="page">
             <div class="page-content">
-              <div id="yamap" style="width: 100%; min-height: 300px;"></div>
-              <div class="content-block-title">Умные места поблизости</div>
-              <div class="list-block media-list">
-                <ul>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Бар &laquo;Mr. Drunke Bar&raquo;</div>
-                          <div class="item-after">0.0 км</div>
-                        </div>
-                        <div class="item-subtitle">г. Краснодар, ул. Красноармейская, 58</div>
-                        <div class="item-text">Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Мясной ресторан &laquo;Скотина&raquo;</div>
-                          <div class="item-after">0.0 км</div>
-                        </div>
-                        <div class="item-subtitle">г. Краснодар, ул. Суворова, 64</div>
-                        <div class="item-text">Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">&laquo;Smoke & Water&raquo;. Алкоголь и сигары</div>
-                          <div class="item-after">0.0 км</div>
-                        </div>
-                        <div class="item-subtitle">г. Краснодар, ул. Красноармейская, 58</div>
-                        <div class="item-text">На полках шоурума представлено более 1500 наименований алкоголя, более 500 наименований сигар и все аксессуары к ним.</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">ИКЕА</div>
-                          <div class="item-after">5 км</div>
-                        </div>
-                        <div class="item-subtitle">Магазин мебели</div>
-                        <div class="item-text">Дом – это не только мебель. Это ощущение уюта – и возможность побыть в обществе родных людей и среди любимых предметов.</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+
+              <!-- Tabs, tabs wrapper -->
+              <div class="tabs" style="height: 100%">
+
+                <!-- Tab 1, active by default -->
+                <div id="view-2-map" class="tab active" style="height: 100%">
+                  <div id="yamap" style="width: 100%; height: 100%;"></div>
+                </div>
+
+                <!-- Tab 2 -->
+                <div id="view-2-list" class="tab">
+
+                  <div class="content-block-title">Умные места поблизости</div>
+                  <div class="list-block media-list">
+                    <ul>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Бар &laquo;Mr. Drunke Bar&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Красноармейская, 58</div>
+                            <div class="item-text">Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Мясной ресторан &laquo;Скотина&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Суворова, 64</div>
+                            <div class="item-text">Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">&laquo;Smoke & Water&raquo;. Алкоголь и сигары</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Красноармейская, 58</div>
+                            <div class="item-text">На полках шоурума представлено более 1500 наименований алкоголя, более 500 наименований сигар и все аксессуары к ним.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Don Bazilio&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Красная, 109</div>
+                            <div class="item-text">&laquo;Don Bazilio&raquo; радует Вас специальным предложением новых блюд из сезонных продуктов. Дополнением к хорошей кухне является достойная карта вин, тщательно подобранная профессиональным сомелье.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Караоке-холл &laquo;Lucky&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Зиповская, 5</div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Gray Goose&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">Краснодар, ул. Северная, 279</div>
+                            <div class="item-text">Модное место, где можно вкусно поесть и вкусно отдохнуть в исключительно приятном обществе и интерьере.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Madyar & Grill Bar&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар ул. Дзержинского, 100</div>
+                            <div class="item-text">&laquo;Madyar & Grill Bar&raquo; - это место, где подают блюда, которые жарят на мангале прямо в присутствии гостей.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Madyar & Grill Bar&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар ул. Уральская, 79/1</div>
+                            <div class="item-text">&laquo;Madyar & Grill Bar&raquo; - это место, где подают блюда, которые жарят на мангале прямо в присутствии гостей.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Мерси Баку&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Индустриальная, 2</div>
+                            <div class="item-text">Наш ресторан - это кавказский прованс, в котором пересекаются кавказские нотки с французским шиком и утонченностью. В интерьере Вас приятно удивит сюрреалистическое направление в стиле конюшни.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Asian grill & bar &laquo;Tommi Lee&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Кубанская Набережная, 1</div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Пиноккио Djan&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">г. Краснодар, ул. Зиповская 5/4</div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Белая дача&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">Краснодар, ул. Мира, 60</div>
+                            <div class="item-text">Белая дача – само название гласит о себе с подчеркнутой изящностью аристократичного общества. Да и неспроста – ведь есть причина…</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title">Ресторан &laquo;Solomon&raquo;</div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle">Краснодар, ул. Красная, 137</div>
+                            <div class="item-text">Мы отбирали лучших производителей, надёжных поставщиков, умелых поваров и передовые технологии приготовления мяса , чтобы на вашей тарелке оказался стейк, достойный настоящего гурмана.</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title"></div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle"></div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title"></div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle"></div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title"></div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle"></div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title"></div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle"></div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-inner">
+                            <div class="item-title-row">
+                              <div class="item-title"></div>
+                              <div class="item-after">0.0 км</div>
+                            </div>
+                            <div class="item-subtitle"></div>
+                            <div class="item-text"></div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
           </div>
         </div>
@@ -351,6 +548,13 @@
           .add(new ymaps.Placemark([45.044362, 38.976822], {iconContent: '13', balloonContentHeader: 'Ресторан &laquo;Solomon&raquo;', balloonContentBody: 'Краснодар, ул. Красная, 137', balloonContentFooter: 'Мы отбирали лучших производителей, надёжных поставщиков, умелых поваров и передовые технологии приготовления мяса , чтобы на вашей тарелке оказался стейк, достойный настоящего гурмана.'}, {preset: 'islands#icon'}))
           .add(new ymaps.Placemark([45.029852, 38.974594], {iconContent: '14', balloonContentHeader: 'Данс-бар &laquo;Яппи&raquo;', balloonContentBody: 'г. Краснодар, ул. Красноармейская, 68', balloonContentFooter: 'Яппи - это сочетание трех совершенно не похожих друг на друга залов, органично сосуществующих в одном заведении: кальян-холла, караоке-холла и, конечно, зоны бара, где по выходным проходят самые стильные вечеринки.'}, {preset: 'islands#icon'}))
           .add(new ymaps.Placemark([45.036757, 38.973768], {iconContent: '15', balloonContentHeader: 'Ресторан &laquo;Маруся&raquo;', balloonContentBody: 'Краснодар, ул. Красная, 109', balloonContentFooter: ''}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.038292, 38.974792], {iconContent: '16', balloonContentHeader: '&laquo;Wok-café&raquo;', balloonContentBody: 'г. Краснодар, ул. Красная 113', balloonContentFooter: 'Wok-café - место где встречается запад и восток.'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.049934, 38.966231], {iconContent: '17', balloonContentHeader: 'Ресторан &laquo;Мадьяр&raquo;', balloonContentBody: 'г. Краснодар, ул. Красных партизан 515', balloonContentFooter: 'Ресторан венгерской кухни.'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.056957, 38.981610], {iconContent: '18', balloonContentHeader: 'Ресторан &laquo;Коралловые бусы&raquo;', balloonContentBody: 'г. Краснодар, ул. Красная 169/1', balloonContentFooter: 'Концепция «Коралловых бус» укладывается в выражение «Кухня нашего города». В меню заведения, разработанном шеф-поваром Ариной Задунайской, собраны блюда кубанской, кавказкой и европейской кухонь.'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.063451, 38.995822], {iconContent: '19', balloonContentHeader: 'Ресторан &laquo;Белка & Стрелка&raquo;', balloonContentBody: 'г. Краснодар, ул. Зиповская, 5', balloonContentFooter: 'Блюда европейской кухни разнообразны и поистине идеальны – от имени до вкуса. Бар двулик, потому что в будни – это дружеская атмосфера, душевный разговор, вдохновленный оригинальной коктейльной картой, отличным выбором пива, вина и любого другого алкоголя на Ваш вкус. Но, по окончании рабочей недели, следуя Вашим настроениям, бар превращается в клуб! И уже здесь улыбки становятся все смелей, переходят в смех и начинается безудержное веселье!'}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.001517, 38.961901], {iconContent: '20', balloonContentHeader: 'Кафе-пекарня &laquo;Патрик и Мари&raquo;', balloonContentBody: 'г. Краснодар, ул. Индустриальная, 2', balloonContentFooter: ''}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.102915, 38.984054], {iconContent: '21', balloonContentHeader: 'Кафе-пекарня &laquo;Патрик и Мари&raquo;', balloonContentBody: 'г. Краснодар ул. Дзержинского, 100', balloonContentFooter: ''}, {preset: 'islands#icon'}))
+          .add(new ymaps.Placemark([45.034490, 39.052586], {iconContent: '22', balloonContentHeader: 'Кафе-пекарня &laquo;Патрик и Мари&raquo;', balloonContentBody: 'г. Краснодар ул. Уральская, 79/1', balloonContentFooter: ''}, {preset: 'islands#icon'}))
           ;
 
         myMap.geoObjects.add(clusterer);
