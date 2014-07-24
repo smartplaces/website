@@ -17,15 +17,10 @@
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
+    <div class="panel panel-left panel-cover">
       <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
-    </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
+        <p><a href="#" class="close-panel">Close</a></p>
+        <p><a href="view-1-1.html" data-view="#view-1" class="close-panel">View-1-1</a></p>
       </div>
     </div>
     <!-- Views, and they are tabs-->
@@ -33,18 +28,27 @@
     <div class="views tabs toolbar-through">
       <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
       <div id="view-1" class="view view-main tab active">
+
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"><a href="#" data-panel="left" class="open-panel link"><i class="icon icon-bars-blue"></i></a></div>
+          </div>
+        </div>
+        <!-- /End of Top Navbar-->
+
         <!-- Pages-->
-        <div class="pages">
+        <div class="pages navbar-through">
           <!-- Page, data-page contains page name-->
           <div data-page="index-1" class="page">
             <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="content-block-title">Welcome</div>
+              <div style="width: 100%; height: 50%; background-image: url('./img/bg1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+              <div class="content-block-title">Мясной ресторан &laquo;Скотина&raquo;</div>
               <div class="content-block">
-                <p>This is an example of tab bar application layout. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-                <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-                <p>And of course, your favorite panels are still here: <a href="#" class="open-panel">left</a> and  <a href="#" data-panel="right" class="open-panel">right</a></p>
-                <p>Icons and their labels in tab bar below are just for example and don't related to their content.</p>
+                <p>Мясной ресторан «Скотина» открылся в городе Краснодаре 14 октября 2013 г. Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса. Для хранения, вызревания и подготовки мяса в ресторане оборудована специальная холодильная камера площадью более 50 кв.м., организован полноценный мясной цех для его переработки, а все мясо готовится на специальных угольных печах.</p>
+                <p>Мясо, из которого мы готовим блюда, поступает нам в тушах! Для полного обеспечения потребностей ресторана, мы разводим своих быков мясных пород шароле, ангус и лимузин.</p>
+                <p>В своих рецептах, мы используем все части туши, поэтому считаем, что вкусное мясо – это не только стейки из премиальных частей. Рекомендуем вам попробовать все части. Мы против «мясного фашизма»!</p>
               </div>
             </div>
           </div>
