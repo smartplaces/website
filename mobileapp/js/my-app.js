@@ -1,5 +1,7 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  swipeBackPage: false
+});
 
 // Export selectors engine
 var $$ = Framework7.$;
@@ -12,4 +14,3 @@ var view2 = myApp.addView('#view-2', {
 });
 var view3 = myApp.addView('#view-3');
 var view4 = myApp.addView('#view-4');
-
