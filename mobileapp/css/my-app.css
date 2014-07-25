@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url('../fonts/lobster.woff') format('woff');
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
+  color: #4A89DC;
+}
+
 i.tabbar-map-icon {
   width: 20px;
   height: 30px;
