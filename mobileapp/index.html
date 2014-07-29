@@ -536,6 +536,8 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
     <!-- Yandex maps -->
+    <script type="text/javascript" src="http://yandex.st/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="http://yandex.st/underscore/1.6.0/underscore.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
       ymaps.ready(init);
@@ -543,6 +545,7 @@
         var
           myMap = new ymaps.Map('yamap', {center: [45.058071, 38.982706], zoom: 11, controls: ['geolocationControl', 'trafficControl', 'zoomControl'], behaviors: ['default']}),
           clusterer = new ymaps.Clusterer({preset: 'islands#darkBlueClusterIcons', clusterDisableClickZoom: true, clusterBalloonPanelMaxMapArea: Infinity}),
+/*
           points = [
             {geometry: [45.025973, 38.973355], properties: {balloonContentHeader: 'Бар &laquo;Mr. Drunke Bar&raquo;', balloonContentBody: 'г. Краснодар, ул. Красноармейская, 58', balloonContentFooter: 'Великий бар — это тот бар, величие и популярность которого держится на атмосфере, создаваемой барменами.'}},
             {geometry: [45.022864, 38.987350], properties: {balloonContentHeader: 'Мясной ресторан &laquo;Скотина&raquo;', balloonContentBody: 'г. Краснодар, ул. Суворова, 64', balloonContentFooter: 'Мы специализируемся на приготовлении мясных блюд, в первую очередь – из местного кубанского мяса.'}},
@@ -567,24 +570,36 @@
             {geometry: [45.102915, 38.984054], properties: {balloonContentHeader: 'Кафе-пекарня &laquo;Патрик и Мари&raquo;', balloonContentBody: 'г. Краснодар ул. Дзержинского, 100', balloonContentFooter: ''}},
             {geometry: [45.034490, 39.052586], properties: {balloonContentHeader: 'Кафе-пекарня &laquo;Патрик и Мари&raquo;', balloonContentBody: 'г. Краснодар ул. Уральская, 79/1', balloonContentFooter: ''}}
           ],
+*/
           geoObjects = [],
           geolocation = ymaps.geolocation
         ;
 
+/*
         for (var i = 0, len = points.length; i < len; i++) {
           geoObjects[i] = new ymaps.Placemark(points[i].geometry, points[i].properties, {preset: 'islands#darkBlueCircleDotIcon', balloonPanelMaxMapArea: Infinity});
         };
-
-        clusterer.add(geoObjects);
-
-        myMap.geoObjects.add(clusterer);
+*/
+        $.ajax({
+          dataType: "jsonp",
+          url: "http://sleepy-scrubland-4869.herokuapp.com/mobile/locations/all",
+        })
+          .done(function(data) {
+            if (console && console.log) {
+              console.log(data);
+            };
+            _.each(data, function(item, index) {
+              geoObjects[index] = new ymaps.Placemark([item.lat, item.lng], {balloonContentHeader: item.title, balloonContentBody: item.address, balloonContentFooter: item.contacts}, {preset: 'islands#darkBlueCircleDotIcon', balloonPanelMaxMapArea: Infinity});
+            });
+            clusterer.add(geoObjects);
+            myMap.geoObjects.add(clusterer);
+          })
+        ;
 
         geolocation.get().then(function(result) {
           // result.geoObjects.options.set('preset', 'islands#geolocationIcon');
           myMap.geoObjects.add(result.geoObjects);
         });
-
-        /* myMap.setBounds(clusterer.getBounds(), {checkZoomRange: true}); */
 
       };
     </script>
