@@ -1,0 +1,169 @@
+﻿<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="./bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="./bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="./jquery-1.11.1.min.js"></script>
+		<script src="./bootstrap.min.js"></script>
+		<script> 
+			var curQ=1;
+			var back = function (){
+				if(curQ==1) 
+					curQ=69
+				else 
+					curQ--;
+				show();
+			}
+			var fwd = function (){
+				if(curQ==69) 
+					curQ=1
+				else 
+					curQ++;
+				show();
+			}
+			function show(){
+				$("#qnumber").text("Q #"+curQ);
+				var filename;
+				if (curQ<10)
+					filename="./0"+curQ+".png";
+				else
+					filename="./"+curQ+".png";
+
+				$("#images").empty();
+				$("#images").prepend('<img id="theImg" src="'+filename+'" />')
+				$("#hideansbtn").addClass("hide");
+				$("#showansbtn").removeClass("hide");
+			}
+			function ans() {
+				var filename;
+				if (curQ<10)
+					filename="./0"+curQ+"a.png";
+				else
+					filename="./"+curQ+"a.png";
+				
+				$("#images").empty();
+
+				switch (curQ) {
+					case 12: $("#images").prepend('<img id="theImg" src="12a1.png" /> <br> <img id="theImg" src="12a2.png" /> <br> <img id="theImg" src="12a3.png" />');break;
+					case 13: $("#images").prepend('<img id="theImg" src="13a1.png" /> <br> <img id="theImg" src="13a2.png" /> <br> <img id="theImg" src="13a3.png" />  <br> <img id="theImg" src="13a4.png" />');break;
+					case 20: $("#images").prepend('<img id="theImg" src="20a1.png" /> <br> <img id="theImg" src="20a2.png" /> ');break;
+					case 23: $("#images").prepend('<img id="theImg" src="23a1.png" /> <br> <img id="theImg" src="23a2.png" /> ');break;
+					case 35: $("#images").prepend('<img id="theImg" src="35a1.png" /> <br> <img id="theImg" src="35a2.png" /> ');break;
+					case 50: $("#images").prepend('<img id="theImg" src="50a1.png" /> <br> <img id="theImg" src="50a2.png" /> ');break;
+					case 51: $("#images").prepend('<img id="theImg" src="51a1.png" /> <br> <img id="theImg" src="51a2.png" /> ');break;
+					case 55: $("#images").prepend('<img id="theImg" src="55a1.png" /> <br> <img id="theImg" src="55a2.png" /> ');break;
+					case 67: $("#images").prepend('<img id="theImg" src="67a1.png" /> <br> <img id="theImg" src="67a2.png" /> ');break;
+					default: $("#images").prepend('<img id="theImg" src="'+filename+'" />');
+				}
+
+				$("#showansbtn").addClass("hide");
+				$("#hideansbtn").removeClass("hide");
+			}
+
+			function run(){
+				
+				show();
+				$("body").keydown(function (event){
+					if(event.keyCode==37) back();
+					if(event.keyCode==39) fwd();
+					if(event.keyCode==32) ans();
+				});
+			}
+
+			function select(qselect){
+				curQ=qselect;
+				show();
+			}
+		</script>
+	</head>
+	<body onload="run()" >
+
+	<a class="btn" onclick="back();" id="backbtn">BACK</a>
+	<a class="btn" onclick="fwd();" id="fwdbtn">FORWARD</a>
+	<div class="btn-group">
+		<button class="btn dropdown-toggle" data-toggle="dropdown" id="qnumber">
+			Q #
+		</button>
+		<ul class="dropdown-menu">
+			<li><a class="qselection" href="#" onclick="select(1)">1</a></li>
+			<li><a class="qselection" href="#" onclick="select(2)">2</a></li>
+			<li><a class="qselection" href="#" onclick="select(3)">3</a></li>
+			<li><a class="qselection" href="#" onclick="select(4)">4</a></li>
+			<li><a class="qselection" href="#" onclick="select(5)">5</a></li>
+			<li><a class="qselection" href="#" onclick="select(6)">6</a></li>
+			<li><a class="qselection" href="#" onclick="select(7)">7</a></li>
+			<li><a class="qselection" href="#" onclick="select(8)">8</a></li>
+			<li><a class="qselection" href="#" onclick="select(9)">9</a></li>
+			<li><a class="qselection" href="#" onclick="select(10)">10</a></li>
+			<li><a class="qselection" href="#" onclick="select(11)">11</a></li>
+			<li><a class="qselection" href="#" onclick="select(12)">12</a></li>
+			<li><a class="qselection" href="#" onclick="select(13)">13</a></li>
+			<li><a class="qselection" href="#" onclick="select(14)">14</a></li>
+			<li><a class="qselection" href="#" onclick="select(15)">15</a></li>
+			<li><a class="qselection" href="#" onclick="select(16)">16</a></li>
+			<li><a class="qselection" href="#" onclick="select(17)">17</a></li>
+			<li><a class="qselection" href="#" onclick="select(18)">18</a></li>
+			<li><a class="qselection" href="#" onclick="select(19)">19</a></li>
+			<li><a class="qselection" href="#" onclick="select(20)">20</a></li>
+			<li><a class="qselection" href="#" onclick="select(21)">21</a></li>
+			<li><a class="qselection" href="#" onclick="select(22)">22</a></li>
+			<li><a class="qselection" href="#" onclick="select(23)">23</a></li>
+			<li><a class="qselection" href="#" onclick="select(24)">24</a></li>
+			<li><a class="qselection" href="#" onclick="select(25)">25</a></li>
+			<li><a class="qselection" href="#" onclick="select(26)">26</a></li>
+			<li><a class="qselection" href="#" onclick="select(27)">27</a></li>
+			<li><a class="qselection" href="#" onclick="select(28)">28</a></li>
+			<li><a class="qselection" href="#" onclick="select(29)">29</a></li>
+			<li><a class="qselection" href="#" onclick="select(30)">30</a></li>
+			<li><a class="qselection" href="#" onclick="select(31)">31</a></li>
+			<li><a class="qselection" href="#" onclick="select(32)">32</a></li>
+			<li><a class="qselection" href="#" onclick="select(33)">33</a></li>
+			<li><a class="qselection" href="#" onclick="select(34)">34</a></li>
+			<li><a class="qselection" href="#" onclick="select(35)">35</a></li>
+			<li><a class="qselection" href="#" onclick="select(36)">36</a></li>
+			<li><a class="qselection" href="#" onclick="select(37)">37</a></li>
+			<li><a class="qselection" href="#" onclick="select(38)">38</a></li>
+			<li><a class="qselection" href="#" onclick="select(39)">39</a></li>
+			<li><a class="qselection" href="#" onclick="select(40)">40</a></li>
+			<li><a class="qselection" href="#" onclick="select(41)">41</a></li>
+			<li><a class="qselection" href="#" onclick="select(42)">42</a></li>
+			<li><a class="qselection" href="#" onclick="select(43)">43</a></li>
+			<li><a class="qselection" href="#" onclick="select(44)">44</a></li>
+			<li><a class="qselection" href="#" onclick="select(45)">45</a></li>
+			<li><a class="qselection" href="#" onclick="select(46)">46</a></li>
+			<li><a class="qselection" href="#" onclick="select(47)">47</a></li>
+			<li><a class="qselection" href="#" onclick="select(48)">48</a></li>
+			<li><a class="qselection" href="#" onclick="select(49)">49</a></li>
+			<li><a class="qselection" href="#" onclick="select(50)">50</a></li>
+			<li><a class="qselection" href="#" onclick="select(51)">51</a></li>
+			<li><a class="qselection" href="#" onclick="select(52)">52</a></li>
+			<li><a class="qselection" href="#" onclick="select(53)">53</a></li>
+			<li><a class="qselection" href="#" onclick="select(54)">54</a></li>
+			<li><a class="qselection" href="#" onclick="select(55)">55</a></li>
+			<li><a class="qselection" href="#" onclick="select(56)">56</a></li>
+			<li><a class="qselection" href="#" onclick="select(57)">57</a></li>
+			<li><a class="qselection" href="#" onclick="select(58)">58</a></li>
+			<li><a class="qselection" href="#" onclick="select(59)">59</a></li>
+			<li><a class="qselection" href="#" onclick="select(60)">60</a></li>
+			<li><a class="qselection" href="#" onclick="select(61)">61</a></li>
+			<li><a class="qselection" href="#" onclick="select(62)">62</a></li>
+			<li><a class="qselection" href="#" onclick="select(63)">63</a></li>
+			<li><a class="qselection" href="#" onclick="select(64)">64</a></li>
+			<li><a class="qselection" href="#" onclick="select(65)">65</a></li>
+			<li><a class="qselection" href="#" onclick="select(66)">66</a></li>
+			<li><a class="qselection" href="#" onclick="select(67)">67</a></li>
+			<li><a class="qselection" href="#" onclick="select(68)">68</a></li>
+			<li><a class="qselection" href="#" onclick="select(69)">69</a></li>
+		</ul>
+	</div>
+	<a class="btn" onclick="ans();" id="showansbtn">SHOW ANSWER</a>
+	<a class="btn hide"  onclick="show();" id="hideansbtn">HIDE ANSWER</a>
+	<span style="color:gray"> Press <B>&#8592;</B> or <B>&#8594;</B> to navigate and <B>Space bar</B> to show answers </span>
+	<div id="images">
+	</div>
+	</body>
+</html>
