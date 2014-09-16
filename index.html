@@ -336,7 +336,8 @@
 
         </div>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://yandex.st/jquery/2.1.1/jquery.js"></script>
+        <script type="text/javascript" src="http://yandex.st/underscore/1.6.0/underscore.js"></script>
         <script type="text/javascript" src="./js/yepnope.js"></script>
         <script type="text/javascript">
 
@@ -384,13 +385,35 @@
 
         </script>
 
-        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script type="text/javascript">
-            var myMap;
             ymaps.ready(init);
             function init () {
-                myMap = new ymaps.Map('yamap', {center:[55.76, 37.64], zoom:10});
-            }
+              var
+                myMap = new ymaps.Map('yamap', {center: [45.058071, 38.982706], zoom: 11, controls: ['geolocationControl', 'trafficControl', 'zoomControl'], behaviors: ['default']}),
+                clusterer = new ymaps.Clusterer({preset: 'islands#darkBlueClusterIcons', clusterDisableClickZoom: true, clusterBalloonPanelMaxMapArea: Infinity}),
+                geoObjects = [],
+                geolocation = ymaps.geolocation
+              ;
+
+              $.ajax({
+                dataType: "jsonp",
+                url: "http://sleepy-scrubland-4869.herokuapp.com/mobile/locations/all",
+              })
+                .done(function(data) {
+                  _.each(data, function(item, index) {
+                    geoObjects[index] = new ymaps.Placemark([item.lat, item.lng], {balloonContentHeader: item.title, balloonContentBody: item.address, balloonContentFooter: item.contacts}, {preset: 'islands#darkBlueCircleDotIcon', balloonPanelMaxMapArea: Infinity});
+                  });
+                  clusterer.add(geoObjects);
+                  myMap.geoObjects.add(clusterer);
+                })
+              ;
+
+              geolocation.get().then(function(result) {
+                myMap.geoObjects.add(result.geoObjects);
+              });
+
+            };
         </script>
     </body>
 </html>
