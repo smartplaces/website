@@ -91,7 +91,7 @@
 
                   <div class="content-block-title">Умные места поблизости</div>
                   <div class="list-block media-list">
-                    <ul>
+                    <ul id="smart-places-near-list">
                       <li>
                         <a href="#" class="item-link item-content">
                           <div class="item-inner">
@@ -588,8 +588,10 @@
             if (console && console.log) {
               console.log(data);
             };
+            $("#smart-places-near-list").empty();
             _.each(data, function(item, index) {
               geoObjects[index] = new ymaps.Placemark([item.lat, item.lng], {balloonContentHeader: item.title, balloonContentBody: item.address, balloonContentFooter: item.contacts}, {preset: 'islands#darkBlueCircleDotIcon', balloonPanelMaxMapArea: Infinity});
+              $("#smart-places-near-list").append($.parseHTML('<li><a href="#" class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">' + item.title + '</div><div class="item-after">0.0 км</div></div><div class="item-subtitle">' + item.address + '</div><div class="item-text">' + item.contacts + '</div></div></a></li>'));
             });
             clusterer.add(geoObjects);
             myMap.geoObjects.add(clusterer);
